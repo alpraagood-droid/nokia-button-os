@@ -1,0 +1,6 @@
+{
+  "name": "YouTube Lite (wrapper)",
+  "version": "1.0",
+  "launch_path": "/youtube/index.html",
+  "icons": {"128": "/youtube/icon.png"},
+  "developer": {"name":"You"}
