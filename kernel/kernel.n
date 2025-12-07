@@ -1,0 +1,34 @@
+; kernel.s - very small kernel loop (pseudo-asm)
+.global _start
+_start:
+    bl init_hardware
+    bl init_memory
+    bl init_scheduler
+main_loop:
+    bl scheduler_tick
+    bl process_events
+    b main_loop
+
+; روتينات init (stubs)
+init_hardware:
+    ; call firmware inits
+    bl keypad_init
+    bl lcd_init
+    bl modem_init
+    bx lr
+
+init_memory:
+    ; إعداد heap/stack
+    bx lr
+
+init_scheduler:
+    ; إنشاء تايم كوارانتين وابعاد المهام
+    bx lr
+
+scheduler_tick:
+    ; تبديل مهام إذا لزم
+    bx lr
+
+process_events:
+    ; معالجة مدخلات الكيباد والمودم
+    bx lr
