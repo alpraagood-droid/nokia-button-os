@@ -1,0 +1,20 @@
+:root {
+  --bg: #0f1720;
+  --card: linear-gradient(135deg,#0ea5a4,#6366f1);
+  --accent: #ffd54f;
+  --muted: #bfc9d5;
+}
+body {
+  margin:0; font-family: "Arial", sans-serif; background:var(--bg); color:#fff; -webkit-font-smoothing:antialiased;
+}
+.topbar { display:flex; align-items:center; padding:10px; }
+.topbar .avatar{ width:44px; height:44px; border-radius:8px; margin-left:8px; box-shadow:0 2px 6px rgba(0,0,0,.3); }
+.topbar .center h1{ margin:0; font-size:16px; }
+.dialer-card{ max-width:280px; margin:12px auto; background:var(--card); border-radius:12px; padding:12px; box-shadow:0 10px 30px rgba(0,0,0,.6); }
+.display{ font-size:20px; text-align:center; padding:8px; background:rgba(255,255,255,0.06); border-radius:8px; margin-bottom:10px; }
+.numpad{ display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+.numpad button{ padding:12px; border-radius:8px; background:rgba(255,255,255,0.06); color:#fff; font-size:16px; border:0; }
+.actions{ display:flex; gap:8px; margin-top:10px; }
+.call{ flex:1; padding:10px; border-radius:8px; background:#06b6d4; border:0; color:#001; font-weight:700; }
+.msg{ flex:1; padding:10px; border-radius:8px; background:#f97316; border:0; color:#fff; }
+.footer{ display:flex; display:space-between; padding:8px 12px; opacity:0.9; font-size:12px; color:var(--muted); }
