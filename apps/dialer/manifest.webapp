@@ -1,0 +1,15 @@
+{
+  "name": "Nokia Fancy Dialer",
+  "description": "واجهة اتصال فخمة لنظام نوكيا زرّار",
+  "version": "1.0.0",
+  "launch_path": "/dialer/index.html",
+  "icons": {
+    "128": "/dialer/icons/dialer-128.png"
+  },
+  "developer": {
+    "name": "YourName",
+    "url": "https://example.com"
+  },
+  "default_locale": "ar",
+  "role": "dialer",
+  "hidpi": true
