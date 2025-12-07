@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nokia Button OS</title>
+<style>
+body {
+    background:#000;
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+#phone {
+    width:240px;
+    height:420px;
+    background:#000;
+    border:6px solid #333;
+    padding:14px;
+}
+.header {
+    text-align:center;
+    color:#aaa;
+    font-size:14px;
+    margin-bottom:12px;
+}
+.menu {
+    margin-top:10px;
+}
+.item {
+    display:flex;
+    align-items:center;
+    padding:8px;
+    border-radius:6px;
+}
+.item svg {
+    width:22px;
+    height:22px;
+    margin-right:10px;
+    fill:#fff;
+}
+.active {
+    background:#1e1e1e;
+}
+.label {
+    color:#fff;
+    font-size:15px;
+}
+.footer {
+    display:flex;
+    justify-content:space-between;
+    color:#888;
+    font-size:12px;
+    margin-top:20px;
+}
+</style>
+</head>
+<body>
+
+<div id="phone">
+    <div class="header">NOKIA OS</div>
+
+    <div class="menu">
+        <div class="item active">
+            <svg viewBox="0 0 24 24"><path d="M6 2h12v20H6z"/></svg>
+            <span class="label">Phone</span>
+        </div>
+
+        <div class="item">
+            <svg viewBox="0 0 24 24"><path d="M2 4h20v14H2z"/></svg>
+            <span class="label">Messages</span>
+        </div>
+
+        <div class="item">
+            <svg viewBox="0 0 24 24"><path d="M3 3h18v18H3z"/></svg>
+            <span class="label">Browser</span>
+        </div>
+
+        <div class="item">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20z"/></svg>
+            <span class="label">Facebook Lite</span>
+        </div>
+
+        <div class="item">
+            <svg viewBox="0 0 24 24"><path d="M10 2h4v20h-4z"/></svg>
+            <span class="label">Settings</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>Options</span>
+        <span>Exit</span>
+    </div>
+</div>
+
+</body>
+</html>
