@@ -1,15 +1,18 @@
-; lcd.asm - شاشة 96x65 بسيطة (stub)
+; modem.asm - واجهة مودم 2G/3G (stub)
 section .text
-global lcd_init, lcd_clear, lcd_draw_pixel
+global modem_init, modem_call, modem_hangup, modem_send_sms
 
-lcd_init:
-    ; تهيئة واجهة الشاشة (SPI/I2C)
+modem_init:
+    ; تهيئة UART، APN، إلخ
     ret
 
-lcd_clear:
-    ; مسح الذاكرة الخاصة بالشاشة
+modem_call:
+    ; call number in r0
     ret
 
-lcd_draw_pixel:
-    ; مدخلات x,y,color
+modem_hangup:
+    ret
+
+modem_send_sms:
+    ; number in r0, message pointer in r1
     ret
